@@ -9,7 +9,6 @@ class ArrayUtil
 	 * if an uneven number of elements one (or more) arrays may have more elements then the others
 	 *
 	 * @example http://codeshare.io/kQHx5
-	 * @author SamB
 	 * 
 	 * @param array The array we want to split
 	 * @param int The number of sections we want
