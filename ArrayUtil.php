@@ -8,7 +8,7 @@ class ArrayUtil
 	 * take an array and split into the given number of arrays with equal number of elements
 	 * if an uneven number of elements one (or more) arrays may have more elements then the others
 	 *
-	 * @example http://codeshare.io/kQHx5
+	 * @example http://snippi.com/s/9ls9sug
 	 * 
 	 * @param array The array we want to split
 	 * @param int The number of sections we want
@@ -30,7 +30,7 @@ class ArrayUtil
 	/**
 	 * Add new elements to the given array after the element with the supplied key
 	 *
-	 * @example http://codeshare.io/vsu9o
+	 * @example http://snippi.com/s/6trt9kq
 	 * 
 	 * @param array The array we want to add to
 	 * @param string|int The key we wish to add our new elements after.
