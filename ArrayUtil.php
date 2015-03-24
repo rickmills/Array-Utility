@@ -9,7 +9,7 @@ class ArrayUtil
 	 * if an uneven number of elements one (or more) arrays may have more elements then the others
 	 *
 	 * @example http://snippi.com/s/9ls9sug
-	 * 
+	 *
 	 * @param array The array we want to split
 	 * @param int The number of sections we want
 	 * @return array The resulting split array
@@ -31,7 +31,7 @@ class ArrayUtil
 	 * Add new elements to the given array after the element with the supplied key
 	 *
 	 * @example http://snippi.com/s/6trt9kq
-	 * 
+	 *
 	 * @param array The array we want to add to
 	 * @param string|int The key we wish to add our new elements after.
 	 * @param array The elements we wish to add
@@ -103,6 +103,29 @@ class ArrayUtil
 		}
 
 		return null;
+	}
+
+	/**
+	 * Move Item
+	 *
+	 * Moves an existing array item to reposition it after another item.
+	 *
+	 * @param array The array we want to do the reordering in
+	 * @param string|int The element key we wish to move
+	 * @param array The element key that'll be before the one we're moving
+	 * @return array The resulting array with reordered elements
+	 */
+	public static function moveItem($array, $key, $move_after) {
+
+        $move_item = array(
+        	$key => $array[$key]
+        );
+
+        unset($array[$key]);
+
+        $result = self::addAfter($array, $move_after, $move_item);
+
+        return $result;
 	}
 
 }
